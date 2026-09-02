@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile received | Flexikits</title>
+  <meta name="description" content="Your Flexikits profile has been received. Participating companies may review your interests and contact you directly.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,560;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div data-site-header></div>
+
+  <main class="thankyou">
+    <div class="container">
+      <article class="thankyou-card reveal show">
+        <p class="eyebrow">Profile created</p>
+        <h1>That is your profile done.</h1>
+        <p>Companies hiring in the areas you picked can now read your profile, including the flexibility you said you need, and contact you directly if it looks like a fit. We will not chase them on your behalf, and we cannot promise who will reach out.</p>
+        <p>There is no set timeline for this, so it is worth carrying on with your other job search in the meantime. Anyone who contacts you should be the company itself. We will not call you offering a job.</p>
+
+        <div id="received-interests">
+          <h2 style="font-size:22px;margin:22px 0 8px">You told us you are interested in</h2>
+          <div class="thankyou-interests" id="interest-chips"></div>
+        </div>
+
+        <div class="company-view" id="company-view">
+          <h2>How this may appear to a participating company</h2>
+          <p id="view-name"></p>
+          <p id="view-roles"></p>
+          <p id="view-areas"></p>
+          <p id="view-flex"></p>
+          <p id="view-skills"></p>
+          <p>Contact: Email · WhatsApp / Mobile</p>
+        </div>
+
+        <!--
+          BUILD NOTE (not shown to visitors)
+          This summary reads from sessionStorage only. A production backend must persist
+          the profile, including listing IDs and category IDs, before companies can
+          review real candidates. See README.md "Before production".
+        -->
+        <p style="margin-top:22px"><a class="btn" href="/">Back to Home</a></p>
+      </article>
+    </div>
+  </main>
+
+  <div data-site-footer></div>
+  <script src="/js/site-chrome.js"></script>
+  <script>
+    (function () {
+      let payload = null;
+      try { payload = JSON.parse(sessionStorage.getItem("flexikits.profile") || "null"); } catch (e) { payload = null; }
+
+      const chips = document.getElementById("interest-chips");
+      const view = document.getElementById("company-view");
+      if (!payload) {
+        document.getElementById("received-interests").hidden = true;
+        view.hidden = true;
+        return;
+      }
+
+      const titles = (payload.interests && payload.interests.listings || []).map((item) => item.title);
+      const areas = (payload.interests && payload.interests.categories || []).map((item) => item.name);
+      const unique = Array.from(new Set(titles.concat(areas)));
+      unique.forEach((label) => {
+        const span = document.createElement("span");
+        span.textContent = label;
+        chips.append(span);
+      });
+
+      document.getElementById("view-name").textContent = "Candidate: " + (payload.candidate && payload.candidate.fullName || "");
+      document.getElementById("view-roles").textContent = "Interested position: " + (titles.join(", ") || "Not specified");
+      document.getElementById("view-areas").textContent = "Relevant interests: " + (areas.join(", ") || "Not specified");
+      const flex = (payload.flexibilityNeeds && payload.flexibilityNeeds.types || []).map((item) => item.name);
+      const flexEl = document.getElementById("view-flex");
+      if (flex.length) {
+        flexEl.textContent = "Flexibility needed: " + flex.join(", ");
+      } else {
+        flexEl.hidden = true;
+      }
+      document.getElementById("view-skills").textContent = "Skills: " + ((payload.candidate && payload.candidate.skills || []).join(", ") || "Not specified");
+    })();
+  </script>
+</body>
+</html>

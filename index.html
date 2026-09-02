@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexible Work in Singapore: Flexi-Place, Flexi-Time, Flexi-Load | Flexikits</title>
+  <meta name="description" content="Explore flexible work in Singapore. Choose flexibility on place, hours or workload, pick the areas that suit you, and let interested companies contact you directly. Free to join.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0c1520">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Flexikits">
+  <meta property="og:locale" content="en_SG">
+  <meta property="og:title" content="Flexible Work in Singapore: Flexi-Place, Flexi-Time, Flexi-Load | Flexikits">
+  <meta property="og:description" content="Explore flexible work in Singapore. Choose flexibility on place, hours or workload, pick the areas that suit you, and let interested companies contact you directly. Free to join.">
+  <meta property="og:image" content="assets/hero-workspace.jpg">
+  <meta property="og:image:alt" content="Someone working at a sunlit desk in Singapore">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flexible Work in Singapore: Flexi-Place, Flexi-Time, Flexi-Load | Flexikits">
+  <meta name="twitter:description" content="Explore flexible work in Singapore: flexi-place, flexi-time and flexi-load across customer service, admin support, content review and data operations.">
+  <meta name="twitter:image" content="assets/hero-workspace.jpg">
+  <!--
+    BUILD NOTE (not shown to visitors)
+    Once the production domain is confirmed, add absolute URLs for rel=canonical,
+    og:url, og:image and twitter:image, and add sitemap.xml plus robots.txt.
+    Canonical is deliberately omitted for now: a wrong absolute canonical is worse
+    for SEO than letting Google self-canonicalise.
+    Do NOT add JobPosting structured data while the catalogue holds opportunity
+    areas rather than confirmed vacancies. JobPosting requires a real open role and
+    misuse risks a Search manual action. See README.md "Before production".
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,560;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div data-site-header></div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">For job seekers in Singapore</p>
+          <h1>Flexible work. <em>Future-ready opportunities.</em></h1>
+          <p class="lead">Browse the kinds of work available, note the flexibility you need on place, hours, or workload, and keep it all on one profile that participating companies can review.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#opportunities">Explore opportunities</a>
+            <a class="btn secondary" href="#profile">Create profile</a>
+          </div>
+        </div>
+
+        <figure class="hero-photo reveal">
+          <img src="assets/hero-workspace.jpg" width="1400" height="1050" alt="A person working at a sunlit desk in a Singapore apartment">
+        </figure>
+      </div>
+    </section>
+
+    <section class="trust" id="platform">
+      <div class="container">
+        <div class="trust-grid reveal">
+          <figure class="trust-photo">
+            <img src="assets/trust-review.jpg" width="1200" height="900" alt="Hands reviewing a candidate profile on a tablet">
+          </figure>
+          <div>
+            <p class="eyebrow">The idea</p>
+            <h2>Start from what you want, not from what is advertised.</h2>
+            <p>Job hunting usually means fitting yourself around whatever is advertised. Here, you say what you are looking for first, and that stays on your profile for participating companies to review.</p>
+            <p>If a company is interested, it contacts you directly using the details you gave. Listing your profile is free, and you can change or remove your interests at any time.</p>
+            <div class="trust-points">
+              <div class="trust-point">
+                <strong>Flexibility stated up front</strong>
+                <p>Note whether you need flexibility on place, hours, or workload, so it is clear from the start.</p>
+              </div>
+              <div class="trust-point">
+                <strong>No one screening you first</strong>
+                <p>We do not score or rank you. Companies read profiles themselves and make their own call.</p>
+              </div>
+              <div class="trust-point">
+                <strong>Honest labels</strong>
+                <p>If something is not a confirmed vacancy, it is labelled an opportunity area, never a job that is open.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="opportunities">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Explore opportunities</p>
+            <h2>See the kind of work on offer.</h2>
+          </div>
+          <p>Areas cover customer service, admin and business support, content review, e-commerce support, and AI data quality work. Confirmed vacancies are marked Open Opportunity; everything else is an area you can register interest in.</p>
+        </div>
+
+        <!--
+          BUILD NOTE (not shown to visitors)
+          The catalogue in js/opportunities.js is placeholder DEVELOPMENT_DATA, not live
+          vacancies. A warning is logged to the browser console on every load, and an
+          on-screen banner can be shown by appending ?dev=1 to the URL.
+          See README.md "Before production" for the full replacement checklist.
+        -->
+        <div id="dev-banner-slot"></div>
+
+        <div class="category-bar" id="category-bar" role="toolbar" aria-label="Filter by opportunity category"></div>
+        <div class="listings-shell">
+          <div class="listings" id="listing-grid"></div>
+          <div class="listing-more" id="listing-more" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="flexibility">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Know what to ask for</p>
+            <h2>Flexibility means three different things. Ask for the one you need.</h2>
+          </div>
+          <p>The Ministry of Manpower groups flexible work into three official categories. Knowing which one you need helps you say precisely what you are asking for.</p>
+        </div>
+
+        <div class="flex-grid" id="flexibility-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <figure class="section-photo reveal">
+          <img src="assets/ai-review.jpg" width="1200" height="900" alt="Someone working through a checklist beside a laptop">
+        </figure>
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Four steps</p>
+            <h2>How Flexikits works</h2>
+          </div>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <h3>Look around</h3>
+            <p>Browse the areas and any confirmed openings. You do not need to give any details yet.</p>
+          </article>
+          <article class="step reveal">
+            <h3>Flag what fits</h3>
+            <p>Pick the roles or areas that match your experience, and the flexibility you need.</p>
+          </article>
+          <article class="step reveal">
+            <h3>Fill in your details</h3>
+            <p>Your name, email, a number you can be reached on, and the skills that apply to you.</p>
+          </article>
+          <article class="step reveal">
+            <h3>Companies may get in touch</h3>
+            <p>Companies hiring in those areas can read your profile and contact you directly if it fits.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="one-profile">
+      <div class="container">
+        <div class="usp-split reveal">
+          <figure class="usp-photo">
+            <img src="assets/usp-profile.jpg" width="1200" height="900" alt="A single folio holding several interest tags on a desk">
+          </figure>
+          <div class="usp">
+            <p class="eyebrow">Your profile</p>
+            <h2>One profile. More possibilities.</h2>
+            <p>Fill in your details once. Add as many areas as genuinely fit you, and your profile is available to participating companies in each of them.</p>
+            <div class="usp-grid">
+              <div class="usp-item">
+                <h3>Seen for the right work</h3>
+                <p>A company sees the exact role or area you picked, not a general application.</p>
+              </div>
+              <div class="usp-item">
+                <h3>Yours to change</h3>
+                <p>Add or remove areas of interest whenever your plans change, without starting again.</p>
+              </div>
+              <div class="usp-item">
+                <h3>One form, not ten</h3>
+                <p>Fill it in once instead of retyping the same details for every listing you come across.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="section" id="profile">
+      <div class="container profile-shell reveal">
+        <div class="profile-copy">
+          <figure class="profile-photo">
+            <img src="assets/usp-profile.jpg" width="1200" height="900" alt="">
+          </figure>
+          <p class="eyebrow">Create profile</p>
+          <h2>Put your profile together.</h2>
+          <p>Nothing to pay, and no CV to upload. Just enough for a participating company to understand the work you want and how to reach you.</p>
+          <div class="interest-summary" id="interest-summary">
+            <h3>Interested opportunity</h3>
+            <p id="interest-summary-empty">Nothing picked yet. Choose your areas of interest in the form, or browse Explore opportunities first.</p>
+            <div id="pinned-interests"></div>
+          </div>
+        </div>
+
+        <form class="form-card" id="profile-form" novalidate>
+          <div data-cddform="cc-sg10-singapore10" data-origin="www.flexikits.com"></div>
+          <script src="https://www.chatfromforms.com/form-embed.js?v=0.1" defer></script>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq-grid">
+        <div class="reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>The questions most people ask first.</h2>
+          <p>The things worth knowing before you share any details.</p>
+        </div>
+        <div class="faq-panel reveal">
+          <div class="faq-card open">
+            <button class="faq-q" type="button">Who can create a profile? <span aria-hidden="true">+</span></button>
+            <div class="faq-a">You need the right to work in Singapore. Beyond that, each participating company sets its own requirements for the roles it offers, so it is worth reading what an area involves before you express interest.</div>
+          </div>
+          <div class="faq-card">
+            <button class="faq-q" type="button">Do I need experience or qualifications? <span aria-hidden="true">+</span></button>
+            <div class="faq-a">That depends on the role, and each company decides its own requirements. The areas here range from support and coordination work to content and data review, so open a few and see which ones match what you can already do.</div>
+          </div>
+          <div class="faq-card">
+            <button class="faq-q" type="button">Is it free? <span aria-hidden="true">+</span></button>
+            <div class="faq-a">Yes. Creating a profile costs nothing, and we will never ask you to pay to be considered or to unlock a listing. If anyone asks you for payment in our name, it is not us.</div>
+          </div>
+          <div class="faq-card">
+            <button class="faq-q" type="button">Will I definitely get a job from this? <span aria-hidden="true">+</span></button>
+            <div class="faq-a">No, and we will not pretend otherwise. Creating a profile makes you visible to companies hiring in the areas you picked. Whether any of them gets in touch is their decision, not ours. We are not your employer and we do not place people into jobs.</div>
+          </div>
+          <div class="faq-card">
+            <button class="faq-q" type="button">Are these real openings right now? <span aria-hidden="true">+</span></button>
+            <div class="faq-a">Only the ones labelled &ldquo;Open Opportunity&rdquo; are confirmed vacancies. Anything marked &ldquo;Opportunity Area&rdquo; is a type of work you can register interest in, so companies know what you are open to. We label the difference so you always know which is which.</div>
+          </div>
+          <div class="faq-card">
+            <button class="faq-q" type="button">Who will actually contact me? <span aria-hidden="true">+</span></button>
+            <div class="faq-a">A participating company, using the email or number on your profile. We do not call on their behalf, and we cannot promise that anyone will reach out. If someone contacts you claiming to be Flexikits offering you a job, treat that as a warning sign.</div>
+          </div>
+          <div class="faq-card">
+            <button class="faq-q" type="button">Do I have to give my number? <span aria-hidden="true">+</span></button>
+            <div class="faq-a">Yes, it is a required field, because most companies here follow up by phone or WhatsApp rather than email. It is used for the opportunities you have shown interest in. Unrelated marketing is a separate tick box that you can leave unchecked.</div>
+          </div>
+          <div class="faq-card">
+            <button class="faq-q" type="button">Can I remove my profile later? <span aria-hidden="true">+</span></button>
+            <div class="faq-a">Yes. You can ask us to correct your details or withdraw your consent at any time, and withdrawing means your profile stops being available to participating companies. See the Privacy Policy for how to make that request.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="final-cta">
+      <div class="container">
+        <div class="final-cta reveal">
+          <img class="final-cta-photo" src="assets/cta-window.jpg" width="1600" height="900" alt="">
+          <div class="final-cta-copy">
+            <p class="eyebrow">Ready when you are</p>
+            <h2>Start with the work, not the form.</h2>
+            <p>Have a look at what is actually here. If something fits, flag it and fill in your profile. Companies hiring in that area can take it from there.</p>
+            <a class="btn" href="#opportunities">Explore opportunities</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="drawer" id="opportunity-drawer" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <div class="drawer-head">
+      <div>
+        <span class="badge" id="drawer-badge"></span>
+        <h2 id="drawer-title"></h2>
+        <p id="drawer-category" class="listing-cat"></p>
+      </div>
+      <button class="drawer-close" type="button" id="drawer-close" aria-label="Close">×</button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </aside>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Flexikits",
+        "description": "A Singapore platform where people discover flexible work areas, register their interest, and become visible to participating companies.",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Singapore"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "name": "Flexikits",
+        "inLanguage": "en-SG"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who can create a profile?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You need the right to work in Singapore. Beyond that, each participating company sets its own requirements for the roles it offers, so it is worth reading what an area involves before you express interest."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need experience or qualifications?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "That depends on the role, and each company decides its own requirements. The areas here range from support and coordination work to content and data review, so open a few and see which ones match what you can already do."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Creating a profile costs nothing, and we will never ask you to pay to be considered or to unlock a listing. If anyone asks you for payment in our name, it is not us."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will I definitely get a job from this?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, and we will not pretend otherwise. Creating a profile makes you visible to companies hiring in the areas you picked. Whether any of them gets in touch is their decision, not ours. We are not your employer and we do not place people into jobs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are these real openings right now?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only the ones labelled “Open Opportunity” are confirmed vacancies. Anything marked “Opportunity Area” is a type of work you can register interest in, so companies know what you are open to. We label the difference so you always know which is which."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who will actually contact me?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A participating company, using the email or number on your profile. We do not call on their behalf, and we cannot promise that anyone will reach out. If someone contacts you claiming to be Flexikits offering you a job, treat that as a warning sign."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I have to give my number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, it is a required field, because most companies here follow up by phone or WhatsApp rather than email. It is used for the opportunities you have shown interest in. Unrelated marketing is a separate tick box that you can leave unchecked."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I remove my profile later?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. You can ask us to correct your details or withdraw your consent at any time, and withdrawing means your profile stops being available to participating companies. See the Privacy Policy for how to make that request."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script src="js/site-chrome.js"></script>
+  <script src="js/opportunities.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

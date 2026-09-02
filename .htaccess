@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Canonical clean URLs (folder index.html)
+DirectoryIndex index.html
+
+# Redirect legacy .html and short paths
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^thank-you\.html$ /thank-you [R=301,L]
+RewriteRule ^privacy\.html$ /privacy-policy [R=301,L]
+RewriteRule ^privacy-policy\.html$ /privacy-policy [R=301,L]
+RewriteRule ^privacy/?$ /privacy-policy [R=301,L]
+RewriteRule ^terms\.html$ /terms-of-use [R=301,L]
+RewriteRule ^terms/?$ /terms-of-use [R=301,L]
