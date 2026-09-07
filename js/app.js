@@ -288,8 +288,8 @@
 
     const kindNote =
       listing.kind === "active_job"
-        ? "This is a confirmed opening. Choosing I'm Interested attaches it to your profile. It is not an application that we review or approve, and it does not guarantee contact."
-        : "This is an opportunity area, not a confirmed opening. Choosing I'm Interested puts it on your profile. It does not mean someone is hiring for it right now.";
+        ? "This is a confirmed opening. Choosing Add to profile attaches it to your profile. It is not an application that we review or approve, and it does not guarantee contact."
+        : "This is an area of interest, not a confirmed opening. Choosing Add to profile puts it on your profile. It does not mean someone is hiring for it right now.";
 
     const omitted = DATA.meta.productionReady
       ? null

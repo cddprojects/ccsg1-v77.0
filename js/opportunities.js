@@ -15,7 +15,7 @@
  * 2. Use `kind: "active_job"` solely for confirmed, currently open vacancies
  *    provided by a participating company.
  * 3. Keep `kind: "opportunity_area"` for interest categories that are not
- *    confirmed openings. Never relabel an area as "Open Opportunity" to
+ *    confirmed openings. Never relabel an area as "Confirmed opening" to
  *    improve conversion.
  * 4. Omit any field that is not verified (salary, company name, remote
  *    status, vacancy count, employment type, urgency, benefits, posted date).
@@ -297,16 +297,16 @@ window.FLEXIKITS.DATA = {
 window.FLEXIKITS.labelsFor = function labelsFor(kind) {
   if (kind === "active_job") {
     return {
-      badge: "Open Opportunity",
-      cardCta: "View Opportunity",
-      detailCta: "I'm Interested",
-      typeLabel: "Active listing",
+      badge: "Confirmed opening",
+      cardCta: "View this opening",
+      detailCta: "Add to profile",
+      typeLabel: "Confirmed opening",
     };
   }
   return {
-    badge: "Opportunity Area",
-    cardCta: "Explore This Area",
-    detailCta: "I'm Interested",
+    badge: "Area of interest",
+    cardCta: "View this area",
+    detailCta: "Add to profile",
     typeLabel: "Area of interest",
   };
 };

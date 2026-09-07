@@ -35,7 +35,7 @@
       <span>Flexikits</span>
     </a>
     <nav class="nav-links" aria-label="Main">
-      <a href="${section("opportunities")}">Opportunities</a>
+      <a href="${section("opportunities")}">Work areas</a>
       <a href="${section("flexibility")}">Flexibility</a>
       <a href="${section("how-it-works")}">How it works</a>
       <a href="${section("faq")}">FAQ</a>
@@ -80,7 +80,7 @@
       Terms. See README.md "Before production".
     -->
     <div class="footer-bottom">
-      Flexikits is not the employer for the opportunity areas shown unless a listing says otherwise, opportunity areas are not confirmed vacancies, and employers are not required to offer flexible work arrangements. Flexikits is not affiliated with the Ministry of Manpower.<br>
+      Flexikits is not the employer for the work areas shown unless a listing says otherwise, areas of interest are not confirmed vacancies, and employers are not required to offer flexible work arrangements. Flexikits is not affiliated with the Ministry of Manpower.<br>
       &copy; 2026 Flexikits. All rights reserved.
     </div>
   </div>
