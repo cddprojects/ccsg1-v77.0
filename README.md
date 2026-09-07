@@ -1,8 +1,8 @@
-# Rolecrisp (Singapore)
+# Flexikits (Singapore)
 
-A static landing site where job seekers discover flexible work areas, register interest in
-the ones that fit them, and create one profile that participating companies can review.
-Companies contact candidates directly. Rolecrisp does not screen, rank, or place people.
+A static landing site where people can browse flexible work areas, register interest in
+the ones that fit them, and create one profile. Flexikits does not screen, rank, or place
+people, and does not advertise confirmed vacancies unless a card is labelled Open Opportunity.
 
 ## Run locally
 
@@ -79,7 +79,7 @@ Optional fields (`compensation`, `companyName`, `workArrangement`, `employmentTy
       counsel-approved text reviewed against the Singapore PDPA.
 - [ ] Confirm the on-form disclosure in `index.html` matches the approved Privacy Policy
       and the real data-sharing workflow.
-- [x] Published contact email (`support@rolecrisp.com`) and business correspondence
+- [x] Published contact email (`support@flexikits.com`) and business correspondence
       address (1 Raffles Quay, Singapore 048583) in the footer and on both legal pages.
 - [ ] Add the registered legal entity name and PDPA data protection officer details
       (if required) to the footer and legal pages.
@@ -102,7 +102,7 @@ Optional fields (`compensation`, `companyName`, `workArrangement`, `employmentTy
 ## Copy conventions
 
 - Plain, direct prose. No em dashes in visitor-facing text.
-- Lead with what the reader gets, not with what Rolecrisp is not.
+- Lead with what the reader gets, not with what Flexikits is not.
 - No invented pay, company names, work arrangements, vacancy counts, urgency, or career
   progression claims.
 - No aggressive CTAs. "Explore This Area", "View Opportunity", and "I'm Interested" are the

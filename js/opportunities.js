@@ -128,10 +128,10 @@ window.FLEXIKITS.DATA = {
     {
       id: "dev-role-ai-quality-reviewer",
       kind: "opportunity_area",
-      title: "AI Quality Reviewer",
+      title: "AI quality review",
       categoryId: "ai-quality-data-ops",
       summary:
-        "Read digital content, hold it against a written guideline, and flag clearly where it falls short. Suits people who are precise and patient.",
+        "Typical work in this area: read digital content, hold it against a written guideline, and note clearly where it falls short. This card is an interest area, not a vacancy.",
       typicalWork: [
         "Reading the material and the output it produced",
         "Checking it against the guideline you are given",
@@ -143,15 +143,15 @@ window.FLEXIKITS.DATA = {
         "Patience with repetitive, detailed work",
       ],
       singaporeRelevance:
-        "Listed for Singapore. Hours, setup, and pay are decided by the company if they get in touch.",
+        "Shown for people who can work in Singapore. Hours, setup, and pay are not stated here and would be decided later by a company, if one gets in touch.",
     },
     {
       id: "dev-role-ai-content-evaluator",
       kind: "opportunity_area",
-      title: "AI Content Evaluator",
+      title: "AI content evaluation",
       categoryId: "ai-quality-data-ops",
       summary:
-        "Judge whether text, labels, or similar content meets a quality standard, and keep those judgements consistent from one item to the next.",
+        "Typical work in this area: judge whether text, labels, or similar content meets a quality standard, and keep those judgements consistent. This card is an interest area, not a vacancy.",
       typicalWork: [
         "Comparing each piece of content against a quality standard",
         "Marking errors, gaps, and unclear wording",
@@ -163,15 +163,15 @@ window.FLEXIKITS.DATA = {
         "An eye for small differences in wording",
       ],
       singaporeRelevance:
-        "Listed for Singapore. Hours, setup, and pay are decided by the company if they get in touch.",
+        "Shown for people who can work in Singapore. Hours, setup, and pay are not stated here and would be decided later by a company, if one gets in touch.",
     },
     {
       id: "dev-role-customer-support-specialist",
       kind: "opportunity_area",
-      title: "Customer Support Specialist",
+      title: "Customer support",
       categoryId: "customer-experience",
       summary:
-        "Answer customer questions over chat or email using a company’s existing process. Suits people who stay calm and write clearly.",
+        "Typical work in this area: answer customer questions over chat or email using a company’s existing process. This card is an interest area, not a vacancy.",
       typicalWork: [
         "Answering common questions in a professional tone",
         "Working from a support playbook or help centre",
@@ -183,15 +183,15 @@ window.FLEXIKITS.DATA = {
         "Comfortable with digital support tools",
       ],
       singaporeRelevance:
-        "Listed for Singapore. Hours, setup, and pay are decided by the company if they get in touch.",
+        "Shown for people who can work in Singapore. Hours, setup, and pay are not stated here and would be decided later by a company, if one gets in touch.",
     },
     {
       id: "dev-role-digital-operations-assistant",
       kind: "opportunity_area",
-      title: "Digital Operations Assistant",
+      title: "Digital operations support",
       categoryId: "digital-operations",
       summary:
-        "Keep everyday digital work moving: updating records, working through task queues, and checking nothing is missing.",
+        "Typical work in this area: keep everyday digital work moving by updating records, working through task queues, and checking nothing is missing. This card is an interest area, not a vacancy.",
       typicalWork: [
         "Updating records in online systems",
         "Moving tasks through a set workflow",
@@ -203,15 +203,15 @@ window.FLEXIKITS.DATA = {
         "Happy with routine, steady tasks",
       ],
       singaporeRelevance:
-        "Listed for Singapore. Hours, setup, and pay are decided by the company if they get in touch.",
+        "Shown for people who can work in Singapore. Hours, setup, and pay are not stated here and would be decided later by a company, if one gets in touch.",
     },
     {
       id: "dev-role-virtual-operations-assistant",
       kind: "opportunity_area",
-      title: "Virtual Operations Assistant",
+      title: "Virtual operations support",
       categoryId: "digital-operations",
       summary:
-        "Remote-friendly support work. Tracking requests, keeping shared documents tidy, and making sure nothing gets dropped.",
+        "Typical work in this area: track requests, keep shared documents tidy, and make sure nothing gets dropped. Any remote or office setup is decided later by a company, if one contacts you. This card is an interest area, not a vacancy.",
       typicalWork: [
         "Tracking incoming requests and what happens next",
         "Putting together simple summaries or checklists",
@@ -223,15 +223,15 @@ window.FLEXIKITS.DATA = {
         "Basic documents and spreadsheets",
       ],
       singaporeRelevance:
-        "Listed for Singapore. Hours, setup, and pay are decided by the company if they get in touch.",
+        "Shown for people who can work in Singapore. Hours, setup, and pay are not stated here and would be decided later by a company, if one gets in touch.",
     },
     {
       id: "dev-role-content-operations-assistant",
       kind: "opportunity_area",
-      title: "Content Operations Assistant",
+      title: "Content operations",
       categoryId: "content-operations",
       summary:
-        "Check and prepare content so it matches the brand or process guidelines before it goes out.",
+        "Typical work in this area: check and prepare content so it matches brand or process guidelines before it goes out. This card is an interest area, not a vacancy.",
       typicalWork: [
         "Checking copy or images against a style guide",
         "Keeping files and content trackers organised",
@@ -243,15 +243,15 @@ window.FLEXIKITS.DATA = {
         "Comfortable working from guidelines",
       ],
       singaporeRelevance:
-        "Listed for Singapore. Hours, setup, and pay are decided by the company if they get in touch.",
+        "Shown for people who can work in Singapore. Hours, setup, and pay are not stated here and would be decided later by a company, if one gets in touch.",
     },
     {
       id: "dev-role-ecommerce-support-associate",
       kind: "opportunity_area",
-      title: "E-Commerce Support Associate",
+      title: "E-commerce support",
       categoryId: "ecommerce-operations",
       summary:
-        "Help an online store run smoothly: product details, order follow-up, and keeping listings accurate.",
+        "Typical work in this area: check product details, follow up on orders using a set process, and keep listings accurate. This card is an interest area, not a vacancy.",
       typicalWork: [
         "Checking product details are complete and correct",
         "Following up on orders or customers using a set process",
@@ -263,15 +263,15 @@ window.FLEXIKITS.DATA = {
         "Comfortable with online store tools",
       ],
       singaporeRelevance:
-        "Listed for Singapore. Hours, setup, and pay are decided by the company if they get in touch.",
+        "Shown for people who can work in Singapore. Hours, setup, and pay are not stated here and would be decided later by a company, if one gets in touch.",
     },
     {
       id: "dev-role-business-support-coordinator",
       kind: "opportunity_area",
-      title: "Business Support Coordinator",
+      title: "Business support and coordination",
       categoryId: "business-support",
       summary:
-        "Scheduling, reminders, and keeping shared records up to date so a team stays organised.",
+        "Typical work in this area: scheduling, reminders, and keeping shared records up to date. This card is an interest area, not a vacancy.",
       typicalWork: [
         "Handling scheduling and reminders",
         "Keeping shared records up to date",
@@ -283,7 +283,7 @@ window.FLEXIKITS.DATA = {
         "Comfortable with calendars and shared documents",
       ],
       singaporeRelevance:
-        "Listed for Singapore. Hours, setup, and pay are decided by the company if they get in touch.",
+        "Shown for people who can work in Singapore. Hours, setup, and pay are not stated here and would be decided later by a company, if one gets in touch.",
     },
   ],
 };
@@ -292,16 +292,16 @@ window.FLEXIKITS.labelsFor = function labelsFor(kind) {
   if (kind === "active_job") {
     return {
       badge: "Open Opportunity",
-      cardCta: "View Opportunity",
-      detailCta: "I'm Interested",
-      typeLabel: "Active listing",
+      cardCta: "View confirmed vacancy",
+      detailCta: "Add to my interests",
+      typeLabel: "Confirmed vacancy",
     };
   }
   return {
-    badge: "Opportunity Area",
-    cardCta: "Explore This Area",
-    detailCta: "I'm Interested",
-    typeLabel: "Area of interest",
+    badge: "Interest area",
+    cardCta: "Read about this area",
+    detailCta: "Add to my interests",
+    typeLabel: "Interest area, not a vacancy",
   };
 };
 
