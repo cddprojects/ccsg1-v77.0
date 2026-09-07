@@ -2,8 +2,8 @@
   const DATA = window.FLEXIKITS && window.FLEXIKITS.DATA;
   if (!DATA) return;
 
-  const INTEREST_KEY = "flexikits.interests";
-  const PROFILE_KEY = "flexikits.profile";
+  const INTEREST_KEY = "discovrhub.interests";
+  const PROFILE_KEY = "discovrhub.profile";
   const LISTINGS_INITIAL = 6;
 
   const COUNTRIES = [
@@ -112,7 +112,7 @@
   function announcePlaceholderData() {
     if (DATA.meta.productionReady) return;
     const message =
-      "Flexikits: opportunity catalogue is DEVELOPMENT_DATA, not live vacancies. " +
+      "Discovr Hub: opportunity catalogue is DEVELOPMENT_DATA, not live vacancies. " +
       "Replace js/opportunities.js with CMS or backend records before launch. " +
       "See README.md 'Before production'. Append ?dev=1 to show the on-screen notice.";
     if (window.console && console.warn) console.warn(message);

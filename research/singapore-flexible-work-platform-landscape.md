@@ -1,6 +1,6 @@
 # Singapore: flexible / remote opportunity-discovery platforms
 
-Competitive and regulatory research for positioning Flexikits, using the "Talent Cape"
+Competitive and regulatory research for positioning Discovr Hub, using the "Talent Cape"
 brief (US remote opportunity discovery + matching) as the reference model.
 
 Researched 1 September 2026. Every figure below is sourced. Where a claim is an inference
@@ -128,7 +128,7 @@ Two consequences that run against intuition:
 1. **"AI matching" is the most expensive differentiator to choose in Singapore.** The obvious
    answer to "we're too generic" is exactly the one that pushes hardest toward needing a
    licence. **Inference**, and worth a lawyer's view before building.
-2. **The current Flexikits architecture is already the licence-light one.** Self-serve
+2. **The current Discovr Hub architecture is already the licence-light one.** Self-serve
    discovery, candidate-declared interest, no scoring or shortlisting, and the company
    initiating contact directly keeps the platform closer to the portal exemption. The
    compliance-forward design is a strategic asset, not just caution.
@@ -243,7 +243,7 @@ sophistication or listing breadth.
 
 A one-sentence positioning consistent with everything above:
 
-> Flexikits is where people in Singapore find genuinely flexible work with employers they can
+> Discovr Hub is where people in Singapore find genuinely flexible work with employers they can
 > verify for themselves, and make their interest visible without handing their details to a
 > stranger on WhatsApp.
 

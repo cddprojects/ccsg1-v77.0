@@ -1,5 +1,5 @@
 /**
- * Flexikits opportunity catalogue
+ * Discovr Hub opportunity catalogue
  * --------------------------------
  * SOURCE: DEVELOPMENT_DATA
  * PRODUCTION READY: false

@@ -1,7 +1,7 @@
-# Flexikits (Singapore)
+# Discovr Hub (Singapore)
 
 A static landing site where people can browse flexible work areas, register interest in
-the ones that fit them, and create one profile. Flexikits does not screen, rank, or place
+the ones that fit them, and create one profile. Discovr Hub does not screen, rank, or place
 people, and does not advertise confirmed vacancies unless a card is labelled Open Opportunity.
 
 ## Run locally
@@ -79,8 +79,8 @@ Optional fields (`compensation`, `companyName`, `workArrangement`, `employmentTy
       counsel-approved text reviewed against the Singapore PDPA.
 - [ ] Confirm the on-form disclosure in `index.html` matches the approved Privacy Policy
       and the real data-sharing workflow.
-- [x] Published contact email (`support@flexikits.com`) and business correspondence
-      address (1 Raffles Quay, Singapore 048583) in the footer and on both legal pages.
+- [x] Published contact email (`support@discovrhub.com`) and business correspondence
+      address (89 Short Street, Singapore 188216) in the footer and on both legal pages.
 - [ ] Add the registered legal entity name and PDPA data protection officer details
       (if required) to the footer and legal pages.
 - [ ] Confirm retention periods and the access, correction, and withdrawal process.
@@ -102,7 +102,7 @@ Optional fields (`compensation`, `companyName`, `workArrangement`, `employmentTy
 ## Copy conventions
 
 - Plain, direct prose. No em dashes in visitor-facing text.
-- Lead with what the reader gets, not with what Flexikits is not.
+- Lead with what the reader gets, not with what Discovr Hub is not.
 - No invented pay, company names, work arrangements, vacancy counts, urgency, or career
   progression claims.
 - No aggressive CTAs. "Explore This Area", "View Opportunity", and "I'm Interested" are the

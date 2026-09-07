@@ -1,5 +1,5 @@
 /**
- * Shared header and footer for all Flexikits static pages.
+ * Shared header and footer for all Discovr Hub static pages.
  * Include once per page: <script src="js/site-chrome.js"></script>
  * Placeholders: <div data-site-header></div> and <div data-site-footer></div>
  */
@@ -30,9 +30,9 @@
     el.outerHTML = `
 <header class="site-header">
   <div class="container navbar">
-    <a class="brand" href="/" aria-label="Flexikits home">
+    <a class="brand" href="/" aria-label="Discovr Hub home">
       ${LOGO}
-      <span>Flexikits</span>
+      <span>Discovr Hub</span>
     </a>
     <nav class="nav-links" aria-label="Main">
       <a href="${section("opportunities")}">Work areas</a>
@@ -54,7 +54,7 @@
       <div>
         <a class="brand" href="/">
           ${LOGO}
-          Flexikits
+          Discovr Hub
         </a>
         <p>A Singapore website for people who want part-time or other flexible work in digital support, and for saying Flexi-Time or Flexi-Load on one profile.</p>
       </div>
@@ -68,8 +68,8 @@
       <div>
         <h3>Contact</h3>
         <p>
-          Email: <a href="mailto:support@flexikits.com">support@flexikits.com</a><br>
-          Business correspondence: 1 Raffles Quay, Singapore 048583
+          Email: <a href="mailto:support@discovrhub.com">support@discovrhub.com</a><br>
+          Business correspondence: 89 Short Street, Singapore 188216
         </p>
       </div>
     </div>
@@ -80,8 +80,8 @@
       Terms. See README.md "Before production".
     -->
     <div class="footer-bottom">
-      Flexikits is not the employer for the work areas shown unless a listing says otherwise, areas of interest are not confirmed vacancies, and employers are not required to offer flexible work arrangements. Flexikits is not affiliated with the Ministry of Manpower.<br>
-      &copy; 2026 Flexikits. All rights reserved.
+      Discovr Hub is not the employer for the work areas shown unless a listing says otherwise, areas of interest are not confirmed vacancies, and employers are not required to offer flexible work arrangements. Discovr Hub is not affiliated with the Ministry of Manpower.<br>
+      &copy; 2026 Discovr Hub. All rights reserved.
     </div>
   </div>
 </footer>`;
