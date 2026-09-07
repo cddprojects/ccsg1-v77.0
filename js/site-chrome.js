@@ -56,7 +56,7 @@
           ${LOGO}
           Flexikits
         </a>
-        <p>A Singapore website for exploring flexible work areas and registering your interest. Flexikits is not an employer and is not a government service.</p>
+        <p>A Singapore website for exploring flexible work and making your interest visible to companies.</p>
       </div>
       <div>
         <h3>Legal</h3>
