@@ -81,7 +81,7 @@ window.FLEXIKITS.DATA = {
         "Where employees work flexibly with different workloads and with commensurate remuneration.",
       examples: "Job sharing, part-time work",
       askFor:
-        "Choose this if you need fewer hours or a shared role, with pay that matches the load.",
+        "Choose this if you need part-time, fewer hours, or a shared role, with pay that matches the load.",
     },
   ],
 
