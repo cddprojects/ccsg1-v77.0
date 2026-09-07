@@ -115,13 +115,18 @@ code {
   width: 34px;
   height: 34px;
   border-radius: 10px;
-  background: var(--ink);
+  overflow: hidden;
   display: grid;
   place-items: center;
   flex: 0 0 auto;
 }
 
-.logo-mark svg { display: block; }
+.logo-mark img {
+  display: block;
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+}
 
 .nav-links {
   display: flex;

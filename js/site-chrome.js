@@ -6,21 +6,7 @@
 (function () {
   const LOGO = `
   <span class="logo-mark" aria-hidden="true">
-    <svg width="18" height="18" viewBox="0 0 32 32" fill="none">
-      <path
-        d="M9 8.5h7.5a6.5 7.25 0 0 1 0 14.5H9V8.5zm3.2 2.7v9.1h4.3a4.3 4.55 0 0 1 0-9.1H12.2z"
-        fill="#E8F3EF"
-        fill-rule="evenodd"
-      />
-      <rect
-        x="9"
-        y="25"
-        width="14"
-        height="1.6"
-        rx="0.8"
-        fill="#1F7A68"
-      />
-    </svg>
+    <img src="/favicon-logo.png" alt="" width="34" height="34">
   </span>`;
 
   const path = (window.location.pathname || "/").replace(/\\/g, "/");
