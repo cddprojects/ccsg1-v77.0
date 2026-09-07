@@ -56,7 +56,7 @@
           ${LOGO}
           Flexikits
         </a>
-        <p>A Singapore website for exploring flexible work and making your interest visible to companies.</p>
+        <p>A Singapore website for career switchers moving into digital support work, and for saying the Flexi-Time or Flexi-Load you need.</p>
       </div>
       <div>
         <h3>Legal</h3>

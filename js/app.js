@@ -470,7 +470,8 @@
             el("p", { class: "flex-plain", text: type.plain }),
             el("h3", { text: type.name }),
             el("p", { text: type.officialDefinition }),
-            el("p", { class: "flex-examples" }, el("strong", { text: "For example: " }), type.examples)
+            el("p", { class: "flex-examples" }, el("strong", { text: "For example: " }), type.examples),
+            type.askFor ? el("p", { class: "hint", text: type.askFor }) : null
           )
         )
       );

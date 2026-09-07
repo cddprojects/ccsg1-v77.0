@@ -58,6 +58,8 @@ window.FLEXIKITS.DATA = {
       officialDefinition:
         "Where employees work flexibly from different locations aside from their usual office location.",
       examples: "Telecommuting, work-from-home",
+      askFor:
+        "Choose this if location is the issue. Fully remote is less common than it was. Hybrid or occasional work from home sits here.",
     },
     {
       id: "flexi-time",
@@ -67,6 +69,8 @@ window.FLEXIKITS.DATA = {
       officialDefinition:
         "Where employees work flexibly at different timings with no changes to total work hours and workload.",
       examples: "Flexi-hours, staggered hours, flexi-shift, compressed work schedule",
+      askFor:
+        "Choose this if you need a later start, staggered hours, or a compressed week, without reducing your total hours.",
     },
     {
       id: "flexi-load",
@@ -76,6 +80,8 @@ window.FLEXIKITS.DATA = {
       officialDefinition:
         "Where employees work flexibly with different workloads and with commensurate remuneration.",
       examples: "Job sharing, part-time work",
+      askFor:
+        "Choose this if you need fewer hours or a shared role, with pay that matches the load.",
     },
   ],
 
@@ -85,7 +91,7 @@ window.FLEXIKITS.DATA = {
       name: "AI Quality & Data Operations",
       image: "assets/cat-ai-quality.jpg",
       summary:
-        "Checking and organising the information that keeps digital and AI systems accurate. This is careful review work rather than a technical AI career path.",
+        "Checking and organising the information that keeps digital and AI systems accurate. Careful review work, not a software engineering path.",
     },
     {
       id: "customer-experience",
