@@ -35,9 +35,9 @@
       <span>Flexikits</span>
     </a>
     <nav class="nav-links" aria-label="Main">
-      <a href="${section("areas")}">Work areas</a>
+      <a href="${section("opportunities")}">Opportunities</a>
       <a href="${section("flexibility")}">Flexibility</a>
-      <a href="${section("who-we-are")}">Who we are</a>
+      <a href="${section("how-it-works")}">How it works</a>
       <a href="${section("faq")}">FAQ</a>
       <a class="btn" href="${section("profile")}">Create profile</a>
     </nav>
@@ -56,7 +56,7 @@
           ${LOGO}
           Flexikits
         </a>
-        <p>An independent Singapore-focused website for browsing flexible work areas and registering interest. Not an employer, not an employment agency, and not a government service.</p>
+        <p>A Singapore website for exploring flexible work areas and registering your interest. Flexikits is not an employer and is not a government service.</p>
       </div>
       <div>
         <h3>Legal</h3>
@@ -80,7 +80,7 @@
       Terms. See README.md "Before production".
     -->
     <div class="footer-bottom">
-      Flexikits is an independent website. It is not affiliated with the Ministry of Manpower or MyCareersFuture. Interest areas are not confirmed vacancies. Flexikits does not promise work, contact, pay, or a flexible arrangement. Employers are not required to offer flexible work.<br>
+      Flexikits is not the employer for the opportunity areas shown unless a listing says otherwise, opportunity areas are not confirmed vacancies, and employers are not required to offer flexible work arrangements. Flexikits is not affiliated with the Ministry of Manpower.<br>
       &copy; 2026 Flexikits. All rights reserved.
     </div>
   </div>

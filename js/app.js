@@ -107,29 +107,14 @@
     return node;
   }
 
+  // The placeholder-data warning is aimed at the team, not at visitors. It always
+  // reaches the console; the on-screen banner only appears with ?dev=1.
   function announcePlaceholderData() {
-    const visitorSlot = document.getElementById("catalogue-notice-slot");
-    if (visitorSlot && !visitorSlot.dataset.filled) {
-      visitorSlot.dataset.filled = "1";
-      visitorSlot.append(
-        el(
-          "div",
-          { class: "catalogue-notice", role: "note" },
-          el(
-            "p",
-            null,
-            el("strong", { text: "Interest areas only" }),
-            " Every card below is a type of work you can register interest in. None of them is a confirmed vacancy. Pay, company name, hours, and flexible arrangements are not stated because they have not been confirmed."
-          )
-        )
-      );
-    }
-
     if (DATA.meta.productionReady) return;
     const message =
-      "Flexikits: catalogue is DEVELOPMENT_DATA, not live vacancies. " +
+      "Flexikits: opportunity catalogue is DEVELOPMENT_DATA, not live vacancies. " +
       "Replace js/opportunities.js with CMS or backend records before launch. " +
-      "See README.md 'Before production'. Append ?dev=1 to show the team notice.";
+      "See README.md 'Before production'. Append ?dev=1 to show the on-screen notice.";
     if (window.console && console.warn) console.warn(message);
 
     const params = new URLSearchParams(window.location.search);
@@ -144,7 +129,7 @@
           "p",
           null,
           el("strong", { text: "Development data" }),
-          " These are placeholder interest areas, not confirmed vacancies. Replace ",
+          " These are placeholder opportunity areas, not confirmed vacancies. Replace ",
           el("code", { text: "js/opportunities.js" }),
           " with CMS or backend records before launch."
         )
@@ -212,13 +197,9 @@
           "div",
           { class: "badge-row" },
           cat ? el("span", { class: "badge badge-cat", text: cat.name }) : null,
-          el(
-            "span",
-            {
-              class: item.kind === "active_job" ? "badge badge-open" : "badge badge-area",
-              text: labels.badge,
-            }
-          )
+          item.kind === "active_job"
+            ? el("span", { class: "badge badge-open", text: labels.badge })
+            : null
         ),
         el("h3", { text: item.title }),
         el("p", { text: item.summary }),
@@ -265,7 +246,7 @@
         state.listingsExpanded = !state.listingsExpanded;
         renderListings();
         if (!state.listingsExpanded) {
-          document.getElementById("areas")?.scrollIntoView({ behavior: "smooth", block: "start" });
+          document.getElementById("opportunities")?.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       },
     });
@@ -307,15 +288,15 @@
 
     const kindNote =
       listing.kind === "active_job"
-        ? "This card is a confirmed vacancy. Adding it to your interests records that you want to be reachable about it. It is not an application that Flexikits reviews or approves, and it does not guarantee contact."
-        : "This card is an interest area, not a confirmed opening. Adding it to your interests records the kind of work you want. It does not mean someone is hiring for it now, and it does not mean a company will contact you.";
+        ? "This is a confirmed opening. Choosing I'm Interested attaches it to your profile. It is not an application that we review or approve, and it does not guarantee contact."
+        : "This is an opportunity area, not a confirmed opening. Choosing I'm Interested puts it on your profile. It does not mean someone is hiring for it right now.";
 
     const omitted = DATA.meta.productionReady
       ? null
       : el(
           "p",
           { class: "hint" },
-          "Pay, company name, and working arrangement are omitted because they have not been confirmed for this area."
+          "Pay, company name, and working arrangement are shown only when a company has confirmed them."
         );
 
     const drawerArt = listing.image || (cat && cat.image);
@@ -365,7 +346,7 @@
         el("a", {
           class: "btn secondary",
           href: "#profile",
-          text: "Go to profile form",
+          text: "Create profile",
           onclick: () => closeDrawer(),
         })
       ),
