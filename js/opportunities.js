@@ -91,7 +91,7 @@ window.FLEXIKITS.DATA = {
       name: "AI Quality & Data Operations",
       image: "assets/cat-ai-quality.jpg",
       summary:
-        "Checking and organising the information that keeps digital and AI systems accurate. Careful review work, not a software engineering path.",
+        "Checking and organising the information that keeps digital and AI systems accurate. Careful review work that follows a written guideline.",
     },
     {
       id: "customer-experience",
